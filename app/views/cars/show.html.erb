@@ -1,0 +1,18 @@
+<h1><%= @car.brand  + " " + @car.model %></h1>
+<p>Engine: <%= @car.engine %></p>
+<p>MPG: <%= @car.mpg %></p>
+<p>Price Per Day: <%= @car.price %></p>
+
+<ul>
+  <li><%= link_to "Edit This Car", edit_car_path(@car) %></li>
+  <li><%= link_to "Delete", car_path(@car), data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %></li>
+</ul>
+
+<h2>Reviews <%=@car.reviews.public_count %></h2>
+<%= render @car.reviews %>
+
+<h2>Add a Review:</h2>
+<%= render 'reviews/form' %>

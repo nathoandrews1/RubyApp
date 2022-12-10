@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  reviewbody: MyText
+  car: one
+
+two:
+  username: MyString
+  reviewbody: MyText
+  car: two

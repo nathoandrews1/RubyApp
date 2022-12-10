@@ -1,0 +1,18 @@
+<% unless review.archived? %>
+<p>
+  <strong>Username:</strong>
+  <%= review.username %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= review.reviewbody %>
+</p>
+
+  <p>
+    <%= link_to "Destroy Review", [review.car, review], data: {
+      turbo_method: :delete,
+      turbo_confirm: "Are you sure?"
+    } %>
+  </p>
+<%end%>
