@@ -1,8 +1,9 @@
 class CarsController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "admin", except: [:index, :show]
+  before_action :authenticate_user!, :except => [:show]
 
   def index
     @car = Car.all
+    $user_current = current_user
   end
 
   def show

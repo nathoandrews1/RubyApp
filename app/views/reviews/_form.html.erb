@@ -4,14 +4,14 @@
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
   </p>
   <p>
-    <%= form.label :username %><br>
-    <%= form.text_field :username %>
-  </p>
-  <p>
     <%= form.label "Review Text"%><br>
-    <%= form.text_area :reviewbody %>
+    <%= form.text_area :reviewbody %><br>
+
+    <input hidden class="hidden" type="text" id="username" name="username" value="<%= current_user.email %>">
+    <input hidden class="hidden" type="text" id="user_id" name="user_id" value="<%= current_user.id %>">
+
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit%>
   </p>
 <%end%>
