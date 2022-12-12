@@ -1,18 +1,35 @@
 <% unless review.archived? %>
-<p>
-  <strong>Username:</strong>
-  <%= review.username %>
-</p>
+<div class="container container-align">
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      <%# This will detect if the user has entered a name, if true will use instead of email %>
+      <% if review.user.name %>
+        <%= review.user.name %>
+      <% elsif review.user.name = '' %>
+        <%= review.user.email %>
+      <% end %>
+    </div>
 
-<p>
-  <strong>Review:</strong>
-  <%= review.reviewbody %>
-</p>
+    <div class="card-header">
+      Rating:
+      <%= review.rating %>
+    </div>
 
-  <p>
-    <%= link_to "Destroy Review", [review.car, review], data: {
-      turbo_method: :delete,
-      turbo_confirm: "Are you sure?"
-    } %>
-  </p>
-<%end%>
+    <div class="card-body">
+      <p class="card-text">
+        <%= review.reviewbody %>
+      </p>
+      <% if current_user %>
+      <% if current_user.email == review.user.email %>
+        <%= link_to "Delete", [review.car, review], class:"card-link btn btn-outline-primary", data: {
+          turbo_method: :delete,
+          turbo_confirm: "Are you sure?"
+        } %>
+      <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+

@@ -1,17 +1,33 @@
-<%= form_with model: [ @car, @car.reviews.build ] do |form| %>
-  <p>
-    <%= form.label :status %><br>
-    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-  </p>
-  <p>
-    <%= form.label :username %><br>
-    <%= form.text_field :username %>
-  </p>
-  <p>
-    <%= form.label "Review Text"%><br>
-    <%= form.text_area :reviewbody %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<%end%>
+<br>
+<div class="container container-align">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add a Review</h5>
+          <%= form_with model: [@car, @car.reviews.build] do |form| %>
+
+            <% if current_user.name == 'admin' %>
+              <%= form.label :status %><br>
+              <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+
+              <% else %>
+              <%= form.hidden_field :status, value: 'public' %>
+            <% end %>
+
+            <div class="form-group">
+              <%= form.label :rating %>
+              <%= form.select :rating, [1,2,3,4,5], class: "form-control" %>
+            </div>
+            <div class="form-group">
+              <%= form.label :reviewbody %>
+              <%= form.text_area :reviewbody, class: "form-control" %>
+            </div>
+            <br>
+              <%= form.submit  class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
