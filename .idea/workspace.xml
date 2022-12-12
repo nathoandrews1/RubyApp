@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d70ca8a1-a266-44be-9bea-942a622d6b72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CarHireApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarHireApp.iml" afterDir="false" />
+    <list default="true" id="d70ca8a1-a266-44be-9bea-942a622d6b72" name="Changes" comment="Added continuous integration, rubocop and gems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/about_us_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/about_us_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cars_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cars_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homepage_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homepage_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/turbo_devise_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/turbo_devise_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/about_us_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/about_us_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/cars_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/cars_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/homepage_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/homepage_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/reviews_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/reviews_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/visible.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/visible.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221021143235_create_cars.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221021143235_create_cars.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221021150517_create_reviews.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221021150517_create_reviews.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221021155545_add_status_to_cars.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221021155545_add_status_to_cars.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221021155605_add_status_to_reviews.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221021155605_add_status_to_reviews.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221210182830_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221210182830_devise_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221211180636_add_user_to_reviews.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221211180636_add_user_to_reviews.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221212164323_add_name_to_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221212164323_add_name_to_user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221212180725_add_rating_to_review.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221212180725_add_rating_to_review.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +192,7 @@
       <workItem from="1670711608734" duration="21338000" />
       <workItem from="1670782608192" duration="27572000" />
       <workItem from="1670866686325" duration="6114000" />
-      <workItem from="1670875386077" duration="426000" />
+      <workItem from="1670875386077" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Repo">
       <created>1670680982196</created>
@@ -261,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670871620641</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added continuous integration, rubocop and gems">
+      <created>1670876161363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670876161363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +266,8 @@
     <MESSAGE value="Adding navbar" />
     <MESSAGE value="Update" />
     <MESSAGE value="Added User accounts, edit account, fixed reviews, added ratings and styling to reviews." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added User accounts, edit account, fixed reviews, added ratings and styling to reviews." />
+    <MESSAGE value="Added continuous integration, rubocop and gems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added continuous integration, rubocop and gems" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
