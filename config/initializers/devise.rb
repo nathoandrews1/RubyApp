@@ -6,9 +6,9 @@
 # breaking changes in upgrades (i.e., in the event that future versions of
 # Devise change the default values for those options).
 
-class TurboFailureApp < Devise::FailureApp;
+class TurboFailureApp < Devise::FailureApp
   def respond
-    if request_format = :turbo_stream
+    if (request_format = :turbo_stream)
       :redirect
     else
       super
@@ -29,7 +29,7 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'd097a88cda27c793292d6f6b38b1f732ccbd27560d08378498d07ea8fcd3af65f8aa4e27f7b62663d4b7a9910eb0026c450a12b24a159403a954679767f27e09'
 
-  config.parent_controller = "TurboDeviseController"
+  config.parent_controller = 'TurboDeviseController'
   config.navigational_formats = ['*/*', :html, :turbo_stream]
   config.warden do |manager|
     manager.failure_app = TurboFailureApp

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TurboDeviseController < ApplicationController
   class Responder < ActionController::Responder
     def to_turbo_stream
@@ -13,6 +15,6 @@ class TurboDeviseController < ApplicationController
     end
   end
 
-  self.responder = Responder;
+  self.responder = Responder
   respond_to :html, :turbo_stream
 end

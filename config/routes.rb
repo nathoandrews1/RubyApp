@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'about_us/about_us'
   get 'cars/index'
@@ -12,7 +14,7 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  root "homepage#index"
+  root 'homepage#index'
   resources :cars do
     resources :reviews
   end

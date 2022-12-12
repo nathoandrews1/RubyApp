@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class CarsController < ApplicationController
-  before_action :authenticate_user!, :except => [:show]
+  before_action :authenticate_user!, except: [:show]
 
   def index
     @car = Car.all
@@ -45,6 +47,7 @@ class CarsController < ApplicationController
   end
 
   private
+
   def car_params
     params.require(:car).permit(:brand, :model, :engine, :mpg, :price, :status)
   end
