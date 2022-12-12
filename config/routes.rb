@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+  get 'about_us/about_us'
   get 'cars/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  devise_for :users
+
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
@@ -10,6 +16,5 @@ Rails.application.routes.draw do
   resources :cars do
     resources :reviews
   end
-
   # Defines the root path route ("/")
 end

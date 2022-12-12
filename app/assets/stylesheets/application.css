@@ -38,3 +38,9 @@
     text-align: center;
     color:blue;
 }
+
+.container-align {
+    position: relative;
+    margin: 0 auto;
+    left: -7.5%;
+}

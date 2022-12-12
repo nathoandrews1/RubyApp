@@ -11,10 +11,11 @@
     turbo_confirm: "Are you sure?"
   } %></li>
 </ul>
+<% end %>
 
-<h2>Reviews <%=@car.reviews.public_count %></h2>
+<h4>Reviews <%=@car.reviews.public_count %></h4>
 <%= render @car.reviews %>
 
-<h2>Add a Review:</h2>
+<% if current_user %>
 <%= render 'reviews/form' %>
 <% end %>

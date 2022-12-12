@@ -7,11 +7,15 @@ class ReviewsController < ApplicationController
   def create
     @car = Car.find(params[:car_id])
     @review = @car.reviews.create(review_params)
+    @review.user_id = current_user.id
+    @review.save
     redirect_to car_path(@car)
   end
 
   def show
     @car = Car.find(params[:car_id])
+    @review = @car.reviews.find(params[:id])
+    @review.destroy
     redirect_to car_path(@car)
   end
 
@@ -19,11 +23,11 @@ class ReviewsController < ApplicationController
     @car = Car.find(params[:car_id])
     @review = @car.reviews.find(params[:id])
     @review.destroy
-    redirect_to car_path(@car), status: :see_other
+    redirect_to car_path(@car)
   end
 
   private
   def review_params
-    params.require(:review).permit(:username, :reviewbody, :status, :user_id)
+    params.require(:review).permit(:username, :reviewbody, :status, :user_id, :rating)
   end
 end

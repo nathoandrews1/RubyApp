@@ -1,10 +1,12 @@
 <%= form_with class:'row g-3', model: @car do |form| %>
-  <div class="newCarFormContainer">
+  <div class="container">
       <div class="row">
         <div class="statusLabel">
           <%= form.label :status %><br>
           <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
         </div>
+      </div>
+
         <div class="col">
           <%= form.label :brand%><br>
           <%= form.select :brand, [
