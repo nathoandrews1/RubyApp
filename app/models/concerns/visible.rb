@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Reviews helper
 module Visible
   extend ActiveSupport::Concern
 

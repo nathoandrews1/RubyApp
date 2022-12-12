@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Reviews Controller
 class ReviewsController < ApplicationController
   before_action :authenticate_user!
   def index

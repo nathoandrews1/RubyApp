@@ -1,11 +1,6 @@
 # frozen_string_literal: true
 
-# Assuming you have not yet modified this file, each configuration option below
-# is set to its default value. Note that some are commented out while others
-# are not: uncommented lines are intended to protect your configuration from
-# breaking changes in upgrades (i.e., in the event that future versions of
-# Devise change the default values for those options).
-
+# TurboFailureApp is for getting exceptions
 class TurboFailureApp < Devise::FailureApp
   def respond
     if (request_format = :turbo_stream)
@@ -27,7 +22,8 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'd097a88cda27c793292d6f6b38b1f732ccbd27560d08378498d07ea8fcd3af65f8aa4e27f7b62663d4b7a9910eb0026c450a12b24a159403a954679767f27e09'
+  # config.secret_key = 'd097a88cda27c793292d6f6b38b1f732ccbd27560d08378498d07ea8fcd3af65f8aa4e27f7b62663d4b7a9910eb002
+  # 6c450a12b24a159403a954679767f27e09'
 
   config.parent_controller = 'TurboDeviseController'
   config.navigational_formats = ['*/*', :html, :turbo_stream]
@@ -144,7 +140,8 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '9058e883a6e989cd2fcd8130b8181efd9c49f7d901b7bad2152e2813adde2c940debd306976ae3a1c3611711c53b6adee8b29b6e007bf24743c7d54da62855c4'
+  # config.pepper = '9058e883a6e989cd2fcd8130b8181efd9c49f7d901b7bad2152e2813adde2c940debd306976ae3a1c3611711c53b6adee
+  # 8b29b6e007bf24743c7d54da62855c4'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false

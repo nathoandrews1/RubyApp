@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
+# Cars Controller
 class CarsController < ApplicationController
   before_action :authenticate_user!, except: [:show]
 
   def index
     @car = Car.all
-    $user_current = current_user
   end
 
   def show

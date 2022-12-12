@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+# Turbo devise controller
+# class TurboDeviseController < Devise::SessionsController
 class TurboDeviseController < ApplicationController
+  # Responder class for turbo controller
   class Responder < ActionController::Responder
     def to_turbo_stream
       controller.render(options.merge(formats: :html))
