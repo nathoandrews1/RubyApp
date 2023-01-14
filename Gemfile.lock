@@ -90,6 +90,7 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    curse_word_killer (1.0.2)
     debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
@@ -176,6 +177,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
+    rails-observers (0.1.5)
+      activemodel (>= 4.0)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -267,6 +270,7 @@ DEPENDENCIES
   brakeman
   bundler-audit
   capybara
+  curse_word_killer
   debug
   devise
   image_processing (>= 1.2)
@@ -276,6 +280,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.4)
+  rails-observers
   rubocop
   rubocop-rails
   ruby_audit

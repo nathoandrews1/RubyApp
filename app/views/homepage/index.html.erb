@@ -27,12 +27,23 @@
 <section class="py-5">
   <div class="container px-4 px-lg-5 mt-5">
     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-      <% @car.each do |car| %>
+      <!-- display the first 4 cars -->
+      <% @car.first(4).each do |car| %>
         <% unless car.archived? %>
           <div class="col mb-5">
-            <div class="card h-100">
+            <div class="card h-100 btn shadowHover" onclick="window.location.href='<%= car_path(car) %>'">
               <!-- Product image-->
+              <% if car.model == "E92 M3"%>
+                <img class="card-img-top" src="https://www.netcarshow.com/BMW-M3_Coupe_UK_Version-2008-800-06.jpg" alt="..." />
+                <% elsif car.model == "F80 M3"%>
+                <img class="card-img-top" src="https://www.netcarshow.com/BMW-M3_Sedan-2015-800-01.jpg" alt="..." />
+                <% elsif car.brand == "Maserati"%>
+                <img class="card-img-top" src="https://www.netcarshow.com/Maserati-Quattroporte-2013-800-06.jpg" alt="..." />
+                <%elsif car.brand == "Abarth" %>
+                <img class="card-img-top" src="https://www.netcarshow.com/Fiat-500C_Abarth-2013-800-01.jpg" alt="..." />
+                <%else%>
               <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                <% end %>
               <!-- Product details-->
               <div class="card-body p-4">
                 <div class="text-center">
@@ -48,9 +59,11 @@
               </div>
             </div>
           </div>
+
         <%end%>
       <% end %>
     </div>
+  </div>
 </section>
 <!-- Footer-->
 <footer class="py-5 bg-dark">

@@ -3,17 +3,17 @@
       function tempAlert(msg,duration)
       {
           var el = document.createElement("p");
-          el.setAttribute("class","login")
+          el.setAttribute("class","login d-flex justify-content-center")
           el.innerHTML = msg;
           setTimeout(function(){
               el.parentNode.removeChild(el);
           },duration);
-          document.body.appendChild(el);
+          document.getElementById("nav").append(el);
       }
       tempAlert("<%= notice %>", 2000);
   </script>
 
 
     <% elsif alert %>
-  <p class="alert"><%= alert %></p>
+  <p class="alert mt-4 mb-0"><%= alert %></p>
 <%end%>

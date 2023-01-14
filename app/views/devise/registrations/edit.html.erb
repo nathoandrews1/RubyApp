@@ -1,48 +1,91 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="mt-4 col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+  <div class="card h-100">
+    <div class="card-body">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="row gutters">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h6 class="mb-2 text-secondary">Personal Details</h6>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="form-group">
+              <%= f.label :role %><br>
+              <%= f.text_field :role, autocomplete: "off", class: "form-control" %>
+            </div>
+          </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="form-group">
+              <%= f.label :email %><br/>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-2">
+            <div class="field">
+              <%= f.label :name %><br>
+              <%= f.text_field :name, autocomplete: "off", class: "form-control" %>
+            </div>
+          </div>
+
+          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+            <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+          <% end %>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-2">
+            <div class="form-group">
+              <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br/>
+              <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+              <% if @minimum_password_length %>
+                <em><%= @minimum_password_length %> characters minimum</em>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-2">
+            <div class="form-group">
+              <%= f.label :password_confirmation %><br/>
+              <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-2">
+            <div class="form-group">
+              <%= f.label :current_password %> <i>(Enter current to update)</i><br/>
+              <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control" %>
+            </div>
+          </div>
+
+          <div class="actions">
+            <%= link_to "Back", :back, class: "btn btn-secondary mt-2" %>
+            <%= f.submit "Update", class: "btn btn-primary mt-2" %>
+            <% if @user.reviews.count > 0 %>
+            <%= link_to "Current reviews", car_reviews_path(@user), class: "btn btn-secondary mt-2" %>
+              <%end%>
+          </div>
+      <% end %>
+      </div>
+    </div>
+    <div class="reviewsBox">
+      <h4>User Reviews</h4>
+      <% @user.reviews.each do |review| %>
+      <label for="staticEmail" class="col-form-label"><%=review.car.brand + " " + review.car.model%></label>
+      <div class="col-sm-10 mb-3">
+        <textarea type="text" readonly class="form-control-plaintext reviewTextArea" id="staticEmail"><%=CurseWordKiller.filter(review.reviewbody)%></textarea>
+      </div>
+        <%end%>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, autocomplete:"off"%>
+</div>
+
+
+<div class="card h-15 w-25 fixed-bottom">
+  <div class="card-body">
+    <div class="">
+    <p class="text-dark">Unhappy?</p>
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
+    </div>
   </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+</div>

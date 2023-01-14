@@ -1,5 +1,5 @@
 <% if current_user %>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="nav" class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="<%= root_path %>">Premo Cars</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,8 +15,14 @@
             Account
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <% if current_user.role == "admin" %>
+              <a class="dropdown-item" href="<%= admin_panel_admin_panel_path %>">Admin Panel</a>
+            <% end %>
+
             <a class="dropdown-item" href="<%= edit_user_registration_path %>">Account Details</a>
-            <a class="dropdown-item" href="<%= root_path %>">Previous Orders</a>
+            <% if current_user.role != "admin" %>
+              <a class="dropdown-item" href="<%= root_path %>">Previous Orders</a>
+            <% end %>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="<%= destroy_user_session_path %>">Logout</a>
           </div>
@@ -27,9 +33,9 @@
       </ul>
     </div>
   </nav>
-  <%else %>
+<% else %>
   <%# user not logged in %>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="nav" class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="<%= root_path %>">Premo Cars</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

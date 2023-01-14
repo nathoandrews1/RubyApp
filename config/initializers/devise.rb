@@ -8,7 +8,7 @@
 
 class TurboFailureApp < Devise::FailureApp
   def respond
-    if (request_format = :turbo_stream)
+    if request_format == :turbo_stream
       :redirect
     else
       super
@@ -16,7 +16,7 @@ class TurboFailureApp < Devise::FailureApp
   end
 
   def skip_format?
-    %w[html turbo_stream].include? request_format.to_s
+    %w[html turbo_stream */*].include? request_format.to_s
   end
 end
 # Use this hook to configure devise mailer, warden hooks and so forth.
@@ -101,7 +101,6 @@ Devise.setup do |config|
 
   # If 401 status code should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
-
   # The realm used in Http Basic Authentication. 'Application' by default.
   # config.http_authentication_realm = 'Application'
 

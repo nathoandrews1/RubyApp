@@ -44,18 +44,25 @@ module Users
     # If you have extra params to permit, append them to the sanitizer.
     def configure_sign_up_params
       devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+      if(params[:user][:role] == nil)
+        params[:user][:role] = 0
+      end
     end
 
     # If you have extra params to permit, append them to the sanitizer.
     def configure_account_update_params
-      devise_parameter_sanitizer.permit(:account_update, keys: [:name])
+      devise_parameter_sanitizer.permit(:account_update, keys: %i[name role])
     end
 
     # for Rails 4 Strong Parameters
     def resource_params
-      params.require(:user).permit(:email, :password, :password_confirmation, :current_password, :user_country_name)
+      params.require(:user).permit(:email,:password,:password_confirmation,:current_password,:user_country_name)
     end
     private :resource_params
+
+    def users_url
+      redirect_to root_path, allow_other_host: true
+    end
 
     # The path used after sign up.
     # def after_sign_up_path_for(resource)

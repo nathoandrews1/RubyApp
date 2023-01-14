@@ -1,120 +1,153 @@
-<%= form_with class:'row g-3', model: @car do |form| %>
-  <div class="container">
-      <div class="row">
-        <div class="statusLabel">
-          <%= form.label :status %><br>
-          <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+<%= form_with class: 'well form-horizontal', model: @car do |form| %>
+  <div class="">
+    <div class="row">
+      <div class="mb-2">
+        <%= form.label :status %><br>
+        <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+      </div>
+    </div>
+
+    <div class="form-group mb-2">
+      <%= form.label :brand, class: "col-md-4 control-label" %>
+      <div class="col-md-4 selectContainer">
+        <%= form.select :brand, [
+          "Abarth",
+          "Alfa Romeo",
+          "Aston Martin",
+          "Audi",
+          "Bentley",
+          "BMW",
+          "Bugatti",
+          "Cadillac",
+          "Chevrolet",
+          "Chrysler",
+          "Citroën",
+          "Dacia",
+          "Daewoo",
+          "Daihatsu",
+          "Dodge",
+          "Donkervoort",
+          "DS",
+          "Ferrari",
+          "Fiat",
+          "Fisker",
+          "Ford",
+          "Honda",
+          "Hummer",
+          "Hyundai",
+          "Infiniti",
+          "Iveco",
+          "Jaguar",
+          "Jeep",
+          "Kia",
+          "KTM",
+          "Lada",
+          "Lamborghini",
+          "Lancia",
+          "Land Rover",
+          "Landwind",
+          "Lexus",
+          "Lotus",
+          "Maserati",
+          "Maybach",
+          "Mazda",
+          "McLaren",
+          "Mercedes-Benz",
+          "MG",
+          "Mini",
+          "Mitsubishi",
+          "Morgan",
+          "Nissan",
+          "Opel",
+          "Peugeot",
+          "Porsche",
+          "Renault",
+          "Rolls-Royce",
+          "Rover",
+          "Saab",
+          "Seat",
+          "Skoda",
+          "Smart",
+          "SsangYong",
+          "Subaru",
+          "Suzuki",
+          "Tesla",
+          "Toyota",
+          "Volkswagen",
+          "Volvo"
+        ] %>
+      </div>
+    </div>
+
+    <!-- Text input-->
+
+
+    <div class="form-group">
+      <%= form.label :model, class: "col-md-4 control-label" %>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <%= form.text_field :model, class: "form-control" %>
         </div>
       </div>
+      <% @car.errors.full_messages_for(:model).each do |message| %>
+        <div class="error-message-cars"><%= message %></div>
+      <% end %>
+    </div>
 
-        <div class="col">
-          <%= form.label :brand%><br>
-          <%= form.select :brand, [
-            "Abarth",
-            "Alfa Romeo",
-            "Aston Martin",
-            "Audi",
-            "Bentley",
-            "BMW",
-            "Bugatti",
-            "Cadillac",
-            "Chevrolet",
-            "Chrysler",
-            "Citroën",
-            "Dacia",
-            "Daewoo",
-            "Daihatsu",
-            "Dodge",
-            "Donkervoort",
-            "DS",
-            "Ferrari",
-            "Fiat",
-            "Fisker",
-            "Ford",
-            "Honda",
-            "Hummer",
-            "Hyundai",
-            "Infiniti",
-            "Iveco",
-            "Jaguar",
-            "Jeep",
-            "Kia",
-            "KTM",
-            "Lada",
-            "Lamborghini",
-            "Lancia",
-            "Land Rover",
-            "Landwind",
-            "Lexus",
-            "Lotus",
-            "Maserati",
-            "Maybach",
-            "Mazda",
-            "McLaren",
-            "Mercedes-Benz",
-            "MG",
-            "Mini",
-            "Mitsubishi",
-            "Morgan",
-            "Nissan",
-            "Opel",
-            "Peugeot",
-            "Porsche",
-            "Renault",
-            "Rolls-Royce",
-            "Rover",
-            "Saab",
-            "Seat",
-            "Skoda",
-            "Smart",
-            "SsangYong",
-            "Subaru",
-            "Suzuki",
-            "Tesla",
-            "Toyota",
-            "Volkswagen",
-            "Volvo"
-          ] %>
-          <% @car.errors.full_messages_for(:title).each do |message| %>
-            <div><%= message %></div>
-          <% end %>
-        </div>
-
-        <div class="col">
-          <%= form.label :model %><br>
-          <%= form.text_field :model %>
-          <% @car.errors.full_messages_for(:title).each do |message| %>
-            <div><%= message %></div>
-          <% end %>
-        </div>
-
-        <div class="col">
-          <%= form.label :engine %><br>
-          <%= form.text_field :engine %>
-          <% @car.errors.full_messages_for(:title).each do |message| %>
-            <div><%= message %></div>
-          <% end %>
-        </div>
-
-        <div class="col">
-          <%= form.label :mpg %><br>
-          <%= form.text_field :mpg %>
-          <% @car.errors.full_messages_for(:title).each do |message| %>
-            <div><%= message %></div>
-          <% end %>
-        </div>
-
-        <div class="col">
-          <%= form.label :price %><br>
-          <%= form.text_field :price %>
-          <% @car.errors.full_messages_for(:title).each do |message| %>
-            <div><%= message %></div>
-          <% end %>
-        </div>
-
-        <div>
-          <%= form.submit %>
+    <div class="form-group">
+      <%= form.label :engine, class: "col-md-4 control-label" %>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <%= form.text_field :engine, class: "form-control" %>
         </div>
       </div>
+      <% @car.errors.full_messages_for(:engine).each do |message| %>
+        <div class="error-message-cars"><%= message %></div>
+      <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :mpg, class: "col-md-4 control-label" %>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <%= form.text_field :mpg, class: "form-control" %>
+        </div>
+      </div>
+      <% @car.errors.full_messages_for(:mpg).each do |message| %>
+        <div class="error-message-cars"><%= message %></div>
+      <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :price, class: "col-md-4 control-label" %>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <%= form.text_field :price, class: "form-control" %>
+        </div>
+      </div>
+      <% @car.errors.full_messages_for(:price).each do |message| %>
+        <div class="error-message-cars"><%= message %></div>
+      <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :horsepower, class: "col-md-4 control-label" %>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+        <%= form.text_field :horsepower, class: "form-control" %>
+        </div>
+      </div>
+      <% @car.errors.full_messages_for(:horsepower).each do |message| %>
+        <div class="error-message-cars"><%= message %></div>
+      <% end %>
+    </div>
+
+  </div>
+
+
+  <div>
+    <%= form.submit class: "btn btn-success mt-2 mb-2", name: "new-car-button" %>
+  </div>
+  </div>
   </div>
 <% end %>

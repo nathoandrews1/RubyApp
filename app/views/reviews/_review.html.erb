@@ -19,14 +19,14 @@
       <p class="card-text">
         <%= review.reviewbody %>
       </p>
-      <% if current_user %>
-      <% if current_user.email == review.user.email %>
+
+      <% if current_user.email == review.user.email || current_user.role == "admin" %>
         <%= link_to "Delete", [review.car, review], class:"card-link btn btn-outline-primary", data: {
           turbo_method: :delete,
           turbo_confirm: "Are you sure?"
         } %>
       <% end %>
-      <% end %>
+
     </div>
   </div>
 </div>

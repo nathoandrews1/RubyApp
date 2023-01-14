@@ -1,21 +1,17 @@
-<h1><%= @car.brand  + " " + @car.model %></h1>
-<p>Engine: <%= @car.engine %></p>
-<p>MPG: <%= @car.mpg %></p>
-<p>Price Per Day: <%= @car.price %></p>
+<div class="adjustPos mt-4">
+  <h1><%= @car.brand + " " + @car.model %></h1>
+  <p>Engine: <%= @car.engine %></p>
+  <p><%=@car.horsepower %>HP</p>
+  <p>MPG: <%= @car.mpg %></p>
+  <p>Price Per Day: <%= @car.price %></p>
 
-<% if current_user %>
-<ul>
-  <li><%= link_to "Edit This Car", edit_car_path(@car) %></li>
-  <li><%= link_to "Delete", car_path(@car), data: {
-    turbo_method: :delete,
-    turbo_confirm: "Are you sure?"
-  } %></li>
-</ul>
-<% end %>
+</div>
 
-<h4>Reviews <%=@car.reviews.public_count %></h4>
-<%= render @car.reviews %>
+<div class="adjustPos">
+  <h4>Reviews <%= @car.reviews.public_count %></h4>
+  <%= render @car.reviews %>
 
-<% if current_user %>
-<%= render 'reviews/form' %>
-<% end %>
+  <% if current_user.role != "admin" %>
+    <%= render 'reviews/form' %>
+  <% end %>
+</div>

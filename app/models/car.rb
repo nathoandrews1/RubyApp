@@ -10,4 +10,5 @@ class Car < ApplicationRecord
   validates :engine, presence: true
   validates :mpg, presence: true
   validates :price, presence: true
+  validates :horsepower, presence: true
 end
