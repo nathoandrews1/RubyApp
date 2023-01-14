@@ -1,0 +1,31 @@
+Index: .idea/dataSources.xml
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources.xml	
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
++    <data-source source="LOCAL" name="CarHireApp: development" uuid="ab363d8b-91d9-4f13-aede-971ddcf587d8">
++      <driver-ref>sqlite.xerial</driver-ref>
++      <synchronize>true</synchronize>
++      <imported>true</imported>
++      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
++      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
++      <jdbc-url>jdbc:sqlite:C:\____College Year 4\RubyCAProject\CarHireApp\db\development.sqlite3</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++    <data-source source="LOCAL" name="CarHireApp: test" uuid="308a9d3b-f5a4-4d15-9109-08ae28e45d66">
++      <driver-ref>sqlite.xerial</driver-ref>
++      <synchronize>true</synchronize>
++      <imported>true</imported>
++      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
++      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
++      <jdbc-url>jdbc:sqlite:C:\____College Year 4\RubyCAProject\CarHireApp\db\test.sqlite3</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file

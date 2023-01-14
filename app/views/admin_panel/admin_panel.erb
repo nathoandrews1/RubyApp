@@ -1,0 +1,64 @@
+
+
+<div class="container">
+  <div class="mt-5">
+    <ul>
+      <!-- button for new car -->
+      <%if current_user.role == "admin"%>
+        <%= link_to "Add New Car", new_car_path, class:"btn btn-outline-success" %>
+      <%end%>
+      <% @car.each do |car| %>
+        <% unless car.archived? %>
+          <!-- Link the car on the page -->
+          <div onclick="window.location.href='<%=car_path(car)%>'" class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 border">
+            <!-- Basic Plan -->
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4">
+                <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing">
+                  <%= car.brand + " " + car.model %>
+                </h4>
+
+                <div class="text-secondary-d1 text-120">
+                  <span class="ml-n15 align-text-bottom">$</span><span class="text-180"><%= car.price %></span> / day
+                </div>
+              </div>
+
+              <ul class="list-unstyled mb-0 col-12 col-md-4 text-dark-l1 text-90 text-left my-4 my-md-0">
+                <li>
+                  <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
+                  <%= car.engine %>
+                </li>
+
+                <li class="mt-25">
+                  <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
+                  <%if car.horsepower != nil %>
+                    <%= car.horsepower %>HP
+                  <%else%>
+                    N/A
+                  <%end%>
+                </li>
+
+                <li class="mt-25">
+                  <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
+                  <%= car.mpg %> MPG
+                </li>
+              </ul>
+
+              <div class="col-4 col-md-2 text-center">
+                <%= link_to "Edit", edit_car_path(car.id), class:"f-n-hover btn btn-success btn-raised px-4 py-25 w-75 text-600" %>
+              </div>
+
+              <div class="col-4 col-md-2 text-center">
+              <%= link_to "Delete", car_path(car.id),class:"f-n-hover btn btn-danger btn-raised px-4 py-25 w-75 text-600", data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+              } %>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

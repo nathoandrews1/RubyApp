@@ -1,0 +1,184 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d70ca8a1-a266-44be-9bea-942a622d6b72\" name=\"Changes\" comment=\"Added continuous integration, rubocop and gems\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Ruby File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"ERB File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Test_Branch\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2GRrzYLtGI629tJ1qAleGKtDHJ0\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/____College Year 4/RubyCAProject/CarHireApp&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,\r\n    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Rails.Development: CarHireApp\">\r\n    <configuration name=\"generated-requests | #1\" type=\"HttpClient.HttpRequestRunConfigurationType\" factoryName=\"HTTP Request\" temporary=\"true\" nameIsGenerated=\"true\" path=\"$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http\" requestIdentifier=\"#1\" runType=\"Run single request\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Development: CarHireApp\" type=\"RailsRunConfigurationType\" factoryName=\"Rails\">\r\n      <module name=\"CarHireApp\" />\r\n      <predefined_log_file enabled=\"true\" id=\"RUBY_RAILS_SERVER\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" BUNDLE_MODE=\"AUTO\" bundleExecEnabled=\"true\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" runner=\"rcov\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SCRIPT_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"PORT\" VALUE=\"3000\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"IP\" VALUE=\"127.0.0.1\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"DUMMY_APP\" VALUE=\"test/dummy\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RAILS_SERVER_TYPE\" VALUE=\"default\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ENVIRONMENT_TYPE\" VALUE=\"development\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"LAUNCH_JS\" VALUE=\"false\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Production: CarHireApp\" type=\"RailsRunConfigurationType\" factoryName=\"Rails\">\r\n      <module name=\"CarHireApp\" />\r\n      <predefined_log_file enabled=\"true\" id=\"RUBY_RAILS_SERVER\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" BUNDLE_MODE=\"AUTO\" bundleExecEnabled=\"true\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" runner=\"rcov\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SCRIPT_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"PORT\" VALUE=\"3000\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"IP\" VALUE=\"127.0.0.1\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"DUMMY_APP\" VALUE=\"test/dummy\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RAILS_SERVER_TYPE\" VALUE=\"Default\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ENVIRONMENT_TYPE\" VALUE=\"production\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"LAUNCH_JS\" VALUE=\"false\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"spec: CarHireApp\" type=\"RakeRunConfigurationType\" factoryName=\"Rake\">\r\n      <module name=\"CarHireApp\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" BUNDLE_MODE=\"AUTO\" bundleExecEnabled=\"true\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" runner=\"rcov\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_NAME\" VALUE=\"spec\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ATTACHED_TEST_FRAMEWORKS\" VALUE=\":rspec \" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TRACE\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_DRYRUN\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_PREREQS\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TESTOPTS\" VALUE=\"\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"test: CarHireApp\" type=\"RakeRunConfigurationType\" factoryName=\"Rake\">\r\n      <module name=\"CarHireApp\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <envs>\r\n        <env name=\"RAILS_ENV\" value=\"test\" />\r\n      </envs>\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" BUNDLE_MODE=\"AUTO\" bundleExecEnabled=\"true\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" runner=\"rcov\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_NAME\" VALUE=\"test\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ATTACHED_TEST_FRAMEWORKS\" VALUE=\":test_unit \" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TRACE\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_DRYRUN\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_PREREQS\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TESTOPTS\" VALUE=\"\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n      <item itemvalue=\"Rails.Development: CarHireApp\" />\r\n      <item itemvalue=\"Rails.Production: CarHireApp\" />\r\n      <item itemvalue=\"Rake.spec: CarHireApp\" />\r\n      <item itemvalue=\"Rake.test: CarHireApp\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n        <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n        <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n        <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n        <item itemvalue=\"HTTP Request.generated-requests | #1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SpringUtil\" SPRING_PRE_LOADER_OPTION=\"true\" RAKE_SPRING_PRE_LOADER_OPTION=\"true\" RAILS_SPRING_PRE_LOADER_OPTION=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d70ca8a1-a266-44be-9bea-942a622d6b72\" name=\"Changes\" comment=\"\" />\r\n      <created>1666362502993</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1666362502993</updated>\r\n      <workItem from=\"1666362505220\" duration=\"24000\" />\r\n      <workItem from=\"1666362544533\" duration=\"10190000\" />\r\n      <workItem from=\"1666697263909\" duration=\"5000\" />\r\n      <workItem from=\"1669323463331\" duration=\"2443000\" />\r\n      <workItem from=\"1669630905298\" duration=\"499000\" />\r\n      <workItem from=\"1670680422543\" duration=\"12318000\" />\r\n      <workItem from=\"1670695892032\" duration=\"5142000\" />\r\n      <workItem from=\"1670711381465\" duration=\"214000\" />\r\n      <workItem from=\"1670711608734\" duration=\"21338000\" />\r\n      <workItem from=\"1670782608192\" duration=\"27572000\" />\r\n      <workItem from=\"1670866686325\" duration=\"6114000\" />\r\n      <workItem from=\"1670875386077\" duration=\"1384000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Pushing Repo\">\r\n      <created>1670680982196</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670680982196</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Adding bootstrap\">\r\n      <created>1670687473254</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670687473254</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Adding navbar\">\r\n      <created>1670687512917</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670687512917</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Update\">\r\n      <created>1670796261021</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670796261021</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Added User accounts, edit account, fixed reviews, added ratings and styling to reviews.\">\r\n      <created>1670871511323</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670871511323</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Added User accounts, edit account, fixed reviews, added ratings and styling to reviews.\">\r\n      <created>1670871620641</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670871620641</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Added continuous integration, rubocop and gems\">\r\n      <created>1670876161363</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670876161363</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Pushing Repo\" />\r\n    <MESSAGE value=\"Adding bootstrap\" />\r\n    <MESSAGE value=\"Adding navbar\" />\r\n    <MESSAGE value=\"Update\" />\r\n    <MESSAGE value=\"Added User accounts, edit account, fixed reviews, added ratings and styling to reviews.\" />\r\n    <MESSAGE value=\"Added continuous integration, rubocop and gems\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added continuous integration, rubocop and gems\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/CarHireApp@Development__CarHireApp.rcov\" NAME=\"Development: CarHireApp Coverage Results\" MODIFIED=\"1670866693143\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"rcov\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" MODULE_NAME=\"CarHireApp\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d70ca8a1-a266-44be-9bea-942a622d6b72" name="Changes" comment="Added continuous integration, rubocop and gems">
++    <list default="true" id="d70ca8a1-a266-44be-9bea-942a622d6b72" name="Changes" comment="testing DB build">
++      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.github/workflows/rubyonrails.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/rubyonrails.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -44,24 +46,32 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/____College Year 4/RubyCAProject/CarHireApp&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "C:/____College Year 4/RubyCAProject/CarHireApp",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "ruby.rails.projectView.checked": "true",
++    "ruby.structure.view.model.defaults.configured": "true",
++    "settings.editor.selected.configurable": "preferences.pluginManager",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
++  <component name="RubyModuleManagerSettings">
++    <option name="blackListedRootsPaths">
++      <list>
++        <option value="$PROJECT_DIR$" />
++      </list>
++    </option>
++  </component>
+   <component name="RunManager" selected="Rails.Development: CarHireApp">
+     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+       <method v="2" />
+@@ -192,7 +202,9 @@
+       <workItem from="1670711608734" duration="21338000" />
+       <workItem from="1670782608192" duration="27572000" />
+       <workItem from="1670866686325" duration="6114000" />
+-      <workItem from="1670875386077" duration="1384000" />
++      <workItem from="1670875386077" duration="6267000" />
++      <workItem from="1670928952490" duration="264000" />
++      <workItem from="1673207726285" duration="1272000" />
+     </task>
+     <task id="LOCAL-00001" summary="Pushing Repo">
+       <created>1670680982196</created>
+@@ -243,7 +255,63 @@
+       <option name="project" value="LOCAL" />
+       <updated>1670876161363</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="Added linux support">
++      <created>1670878934403</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1670878934403</updated>
++    </task>
++    <task id="LOCAL-00009" summary="testing DB build">
++      <created>1670882241614</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1670882241614</updated>
++    </task>
++    <task id="LOCAL-00010" summary="testing DB build">
++      <created>1670882362377</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1670882362377</updated>
++    </task>
++    <task id="LOCAL-00011" summary="testing DB build">
++      <created>1670882413752</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1670882413752</updated>
++    </task>
++    <task id="LOCAL-00012" summary="testing DB build">
++      <created>1670882443173</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1670882443173</updated>
++    </task>
++    <task id="LOCAL-00013" summary="testing DB build">
++      <created>1670882524306</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1670882524306</updated>
++    </task>
++    <task id="LOCAL-00014" summary="testing DB build">
++      <created>1670883331526</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1670883331527</updated>
++    </task>
++    <task id="LOCAL-00015" summary="testing DB build">
++      <created>1670883407710</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1670883407710</updated>
++    </task>
++    <option name="localTasksCounter" value="16" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -267,13 +335,16 @@
+     <MESSAGE value="Update" />
+     <MESSAGE value="Added User accounts, edit account, fixed reviews, added ratings and styling to reviews." />
+     <MESSAGE value="Added continuous integration, rubocop and gems" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added continuous integration, rubocop and gems" />
++    <MESSAGE value="Added linux support" />
++    <MESSAGE value="testing DB build" />
++    <option name="LAST_COMMIT_MESSAGE" value="testing DB build" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+     <select />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/CarHireApp@Development__CarHireApp.rcov" NAME="Development: CarHireApp Coverage Results" MODIFIED="1670866693143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
++    <SUITE FILE_PATH="coverage/CarHireApp@test__CarHireApp.rcov" NAME="test: CarHireApp Coverage Results" MODIFIED="1670881720662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
++    <SUITE FILE_PATH="coverage/CarHireApp@Development__CarHireApp.rcov" NAME="Development: CarHireApp Coverage Results" MODIFIED="1673208774522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .github/workflows/rubyonrails.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># This workflow uses actions that are not certified by GitHub.  They are\r\n# provided by a third-party and are governed by separate terms of service,\r\n# privacy policy, and support documentation.\r\n#\r\n# This workflow will install a prebuilt Ruby version, install dependencies, and\r\n# run tests and linters.\r\nname: \"Ruby on Rails CI\"\r\non:\r\n  push:\r\n    branches: [ \"main\" ]\r\n  pull_request:\r\n    branches: [ \"main\" ]\r\njobs:\r\n  test:\r\n    runs-on: ubuntu-latest\r\n    services:\r\n      postgres:\r\n        image: postgres:11-alpine\r\n        ports:\r\n          - \"5432:5432\"\r\n        env:\r\n          POSTGRES_DB: rails_test\r\n          POSTGRES_USER: rails\r\n          POSTGRES_PASSWORD: password\r\n    env:\r\n      RAILS_ENV: test\r\n      DATABASE_URL: \"postgres://rails:password@localhost:5432/rails_test\"\r\n    steps:\r\n      - name: Checkout code\r\n        uses: actions/checkout@v3\r\n      # Add or replace dependency steps here\r\n      - name: Install Ruby and gems\r\n        uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # v1.115.3\r\n        with:\r\n          bundler-cache: true\r\n      # Add or replace database setup steps here\r\n      - name: Set up database schema\r\n        run: rails db:schema:load\r\n      # Add or replace test runners here\r\n      - name: Run tests\r\n        run: bin/rake\r\n\r\n  lint:\r\n    runs-on: ubuntu-latest\r\n    steps:\r\n      - name: Checkout code\r\n        uses: actions/checkout@v3\r\n      - name: Install Ruby and gems\r\n        uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # v1.115.3\r\n        with:\r\n          bundler-cache: true\r\n      # Add or replace any other lints here\r\n      - name: Security audit dependencies\r\n        run: bundle exec bundle audit --update\r\n      - name: Security audit application code\r\n        run: bundle exec brakeman -q -w2\r\n      - name: Lint Ruby files\r\n        run: bundle exec rubocop --parallel\r\n
+===================================================================
+diff --git a/.github/workflows/rubyonrails.yml b/.github/workflows/rubyonrails.yml
+--- a/.github/workflows/rubyonrails.yml	
++++ b/.github/workflows/rubyonrails.yml	
+@@ -35,7 +35,7 @@
+           bundler-cache: true
+       # Add or replace database setup steps here
+       - name: Set up database schema
+-        run: rails db:schema:load
++        run: bin/rails db:schema:load
+       # Add or replace test runners here
+       - name: Run tests
+         run: bin/rake
