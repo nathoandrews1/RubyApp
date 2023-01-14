@@ -11,7 +11,9 @@
   <h4>Reviews <%= @car.reviews.public_count %></h4>
   <%= render @car.reviews %>
 
+  <% if current_user %>
   <% if current_user.role != "admin" %>
     <%= render 'reviews/form' %>
+  <% end %>
   <% end %>
 </div>
