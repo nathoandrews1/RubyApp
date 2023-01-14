@@ -73,3 +73,13 @@ html {
     height: 100%;
     padding: 1%;
 }
+
+#review {
+    position: relative;
+    margin: 0 auto;
+    width: 125%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    place-content: center;
+}

@@ -60,21 +60,30 @@
           <div class="actions">
             <%= link_to "Back", :back, class: "btn btn-secondary mt-2" %>
             <%= f.submit "Update", class: "btn btn-primary mt-2" %>
-            <% if @user.reviews.count > 0 %>
-            <%= link_to "Current reviews", car_reviews_path(@user), class: "btn btn-secondary mt-2" %>
-              <%end%>
           </div>
       <% end %>
       </div>
+      <% if @user.reviews.count > 0 %>
+        <button class="btn btn-secondary mt-2" id="reviewButton">View Reviews</button>
+      <% end %>
     </div>
-    <div class="reviewsBox">
-      <h4>User Reviews</h4>
+    <div class="reviewsBox d-none" id="reviewDiv">
       <% @user.reviews.each do |review| %>
-      <label for="staticEmail" class="col-form-label"><%=review.car.brand + " " + review.car.model%></label>
-      <div class="col-sm-10 mb-3">
-        <textarea type="text" readonly class="form-control-plaintext reviewTextArea" id="staticEmail"><%=CurseWordKiller.filter(review.reviewbody)%></textarea>
-      </div>
-        <%end%>
+        <div class="card mb-2">
+          <label for="review" class="col-form-label col-12 ms-3"><%= review.car.brand + " " + review.car.model %></label>
+          <label class="col-form-label ms-3 mt-0 mb-0">Rating: <%= review.rating %></label>
+          <div class="col-sm-10 mb-3">
+            <div class="card-body">
+              <textarea type="text" readonly class="form-control-plaintext card" id="review"><%= CurseWordKiller.filter(review.reviewbody) %></textarea>
+            </div>
+            <button onclick="window.location.href='<%= car_path(review.car) %>'" class="btn btn-secondary mt-2 ms-3" id="goToCarBtn">Go To Car</button>
+            <%= link_to "Delete", [review.car, review], class:"card-link btn btn-danger mt-2", data: {
+              turbo_method: :delete,
+              turbo_confirm: "Are you sure?"
+            } %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 
@@ -84,8 +93,8 @@
 <div class="card h-15 w-25 fixed-bottom">
   <div class="card-body">
     <div class="">
-    <p class="text-dark">Unhappy?</p>
-    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
+      <p class="text-dark">Unhappy?</p>
+      <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
     </div>
   </div>
 </div>
