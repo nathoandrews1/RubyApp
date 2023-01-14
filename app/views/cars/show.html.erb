@@ -1,29 +1,52 @@
-
-<div class="adjustPos mt-4">
-  <div class="card">
-  <h1><%= @car.brand + " " + @car.model %></h1>
-
-  <div class="galleryDiv">
-  <%= render 'gallery/gallery' %>
+<!-- Product section-->
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+      <div class="col-md-6">
+        <div class="small mb-1">ID <%= @car.id %></div>
+        <h1 class="display-5 fw-bolder"><%= @car.brand + " " + @car.model %></h1>
+        <div class="fs-5 mb-5">
+          <span class="text-decoration-line-through">$225</span>
+          <span>$200</span>
+        </div>
+        <p class="lead">Price Per Day: <%= @car.price %><br></p>
+        <p class="lead">Power: <%= @car.horsepower %><br></p>
+        <p class="lead">MPG: <%= @car.mpg %><br></p>
+        <p class="lead">Engine: <%= @car.engine %><br></p>
+        <div class="d-flex">
+          <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+          <button class="btn btn-outline-dark flex-shrink-0" type="button">
+            <i class="bi-cart-fill me-1"></i>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-    <div class="card-body cardBody">
+    <h1><%= @car.brand + " " + @car.model %></h1>
+
+    <div class="galleryDiv">
+      <%= render 'gallery/gallery' %>
+    </div>
+
       <p>Engine: <%= @car.engine %></p>
       <p><%= @car.horsepower %>HP</p>
       <p>MPG: <%= @car.mpg %></p>
       <p>Price Per Day: <%= @car.price %></p>
-    </div>
 
-</div>
 
-<div class="adjustPos">
-  <h4>Reviews <%= @car.reviews.public_count %></h4>
-  <%= render @car.reviews %>
 
-  <% if current_user %>
-  <% if current_user.role != "admin" %>
-    <%= render 'reviews/form' %>
-  <% end %>
-  <% end %>
-</div>
+  <div class="adjustPos">
+    <h4>Reviews <%= @car.reviews.public_count %></h4>
+    <%= render @car.reviews %>
+
+    <% if current_user %>
+      <% if current_user.role != "admin" %>
+        <%= render 'reviews/form' %>
+      <% end %>
+    <% end %>
+  </div>
 </div>
