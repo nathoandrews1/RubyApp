@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc70ec45-6bc1-4b07-800e-0297e910818b" name="Changes" comment="Fixed bug with rails server launch.">
-      <change afterPath="$PROJECT_DIR$/app/javascript/custom.js" afterDir="false" />
+    <list default="true" id="cc70ec45-6bc1-4b07-800e-0297e910818b" name="Changes" comment="Fixed Error for nil class, cecking user is currently logged in via current_user">
+      <change afterPath="$PROJECT_DIR$/app/views/gallery/_gallery.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CarHireApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarHireApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cars/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cars/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
       <list>
         <option value="Ruby File" />
         <option value="HTML File" />
-        <option value="ERB File" />
         <option value="JavaScript File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -207,7 +207,7 @@
       <workItem from="1673574320897" duration="602000" />
       <workItem from="1673581037974" duration="595000" />
       <workItem from="1673631422972" duration="26164000" />
-      <workItem from="1673679860814" duration="13054000" />
+      <workItem from="1673679860814" duration="28798000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Repo">
       <created>1670680982196</created>
@@ -265,7 +265,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673689511847</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added reviews to profile page.">
+      <created>1673693136549</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673693136549</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding new files">
+      <created>1673705478527</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673705478527</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed Error for nil class, cecking user is currently logged in via current_user">
+      <created>1673711920594</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673711920594</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +311,10 @@
     <MESSAGE value="Added User accounts, edit account, fixed reviews, added ratings and styling to reviews." />
     <MESSAGE value="Big Update" />
     <MESSAGE value="Fixed bug with rails server launch." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with rails server launch." />
+    <MESSAGE value="Added reviews to profile page." />
+    <MESSAGE value="Adding new files" />
+    <MESSAGE value="Fixed Error for nil class, cecking user is currently logged in via current_user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error for nil class, cecking user is currently logged in via current_user" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -298,6 +322,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CarHireApp@test__CarHireApp.rcov" NAME="test: CarHireApp Coverage Results" MODIFIED="1670881720662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
-    <SUITE FILE_PATH="coverage/CarHireApp@Development__CarHireApp.rcov" NAME="Development: CarHireApp Coverage Results" MODIFIED="1673689442415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
+    <SUITE FILE_PATH="coverage/CarHireApp@Development__CarHireApp.rcov" NAME="Development: CarHireApp Coverage Results" MODIFIED="1673695239190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CarHireApp" />
   </component>
 </project>

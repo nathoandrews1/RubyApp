@@ -177,8 +177,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
-    rails-observers (0.1.5)
-      activemodel (>= 4.0)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -280,7 +278,6 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.4)
-  rails-observers
   rubocop
   rubocop-rails
   ruby_audit

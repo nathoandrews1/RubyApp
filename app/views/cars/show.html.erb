@@ -1,9 +1,18 @@
+
 <div class="adjustPos mt-4">
+  <div class="card">
   <h1><%= @car.brand + " " + @car.model %></h1>
-  <p>Engine: <%= @car.engine %></p>
-  <p><%=@car.horsepower %>HP</p>
-  <p>MPG: <%= @car.mpg %></p>
-  <p>Price Per Day: <%= @car.price %></p>
+
+  <div class="galleryDiv">
+  <%= render 'gallery/gallery' %>
+  </div>
+
+    <div class="card-body cardBody">
+      <p>Engine: <%= @car.engine %></p>
+      <p><%= @car.horsepower %>HP</p>
+      <p>MPG: <%= @car.mpg %></p>
+      <p>Price Per Day: <%= @car.price %></p>
+    </div>
 
 </div>
 
@@ -16,4 +25,5 @@
     <%= render 'reviews/form' %>
   <% end %>
   <% end %>
+</div>
 </div>

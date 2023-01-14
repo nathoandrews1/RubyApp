@@ -7,8 +7,6 @@ ruby '3.1.2'
 
 gem 'curse_word_killer'
 
-gem 'rails-observers'
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 
@@ -22,6 +20,8 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 
 gem 'jquery-rails'
+
+gem 'pg'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'

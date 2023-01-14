@@ -113,7 +113,6 @@
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
         <option value="active_record:multi_db" />
-        <option value="active_record:observer" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
@@ -132,7 +131,6 @@
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
-        <option value="observer" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
@@ -145,7 +143,6 @@
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
-        <option value="test_unit:observer" />
         <option value="test_unit:plugin" />
       </list>
     </option>
@@ -154,7 +151,6 @@
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
         <option value="active_record:multi_db" />
-        <option value="active_record:observer" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
@@ -173,7 +169,6 @@
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
-        <option value="observer" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
@@ -186,7 +181,6 @@
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
-        <option value="test_unit:observer" />
         <option value="test_unit:plugin" />
       </list>
     </option>
@@ -488,6 +482,14 @@
           </RakeTaskImpl>
           <RakeTaskImpl description="" fullCommand="default" id="default" />
           <RakeTaskImpl description="" fullCommand="environment" id="environment" />
+          <RakeTaskImpl id="fly">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="fly:build" id="build" />
+              <RakeTaskImpl description="" fullCommand="fly:release" id="release" />
+              <RakeTaskImpl description="" fullCommand="fly:server" id="server" />
+              <RakeTaskImpl description="" fullCommand="fly:swapfile" id="swapfile" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl id="railties">
             <subtasks>
               <RakeTaskImpl id="install">
