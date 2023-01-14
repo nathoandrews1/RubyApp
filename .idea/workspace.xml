@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc70ec45-6bc1-4b07-800e-0297e910818b" name="Changes" comment="Fixed Error for nil class, cecking user is currently logged in via current_user">
-      <change afterPath="$PROJECT_DIR$/app/views/gallery/_gallery.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CarHireApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarHireApp.iml" afterDir="false" />
+    <list default="true" id="cc70ec45-6bc1-4b07-800e-0297e910818b" name="Changes" comment="Updated View for show cars">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/cars/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cars/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +202,7 @@
       <workItem from="1673574320897" duration="602000" />
       <workItem from="1673581037974" duration="595000" />
       <workItem from="1673631422972" duration="26164000" />
-      <workItem from="1673679860814" duration="28798000" />
+      <workItem from="1673679860814" duration="30394000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Repo">
       <created>1670680982196</created>
@@ -286,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673711920594</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Final Push">
+      <created>1673713577401</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673713577401</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated View for show cars">
+      <created>1673714218366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673714218366</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +323,9 @@
     <MESSAGE value="Added reviews to profile page." />
     <MESSAGE value="Adding new files" />
     <MESSAGE value="Fixed Error for nil class, cecking user is currently logged in via current_user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error for nil class, cecking user is currently logged in via current_user" />
+    <MESSAGE value="Final Push" />
+    <MESSAGE value="Updated View for show cars" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated View for show cars" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
